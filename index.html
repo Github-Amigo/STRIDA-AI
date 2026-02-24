@@ -56,7 +56,7 @@
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     contents: conversation,
-                    system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
+                    systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
                     safetySettings: [
                         { category: "HARM_CATEGORY_HARASSMENT", threshold: "BLOCK_NONE" },
                         { category: "HARM_CATEGORY_HATE_SPEECH", threshold: "BLOCK_NONE" },
@@ -97,4 +97,5 @@
 </script>
 </body>
 </html>
+
 
